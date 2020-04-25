@@ -4,7 +4,25 @@
   "main": "index.js",
   "author": "christopherbiscardi <chris@christopherbiscardi.com> (@chrisbiscardi)",
   "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
   "peerDependencies": {
     "gatsby": "^2.6.0"
+  },
+  "dependencies": {
+    "gatsby-plugin-theme-ui": "^0.3.0",
+    "gatsby-plugin-typescript": "^2.3.5"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.5.0",
+    "@testing-library/react": "^10.0.3",
+    "@types/jest": "^25.2.1",
+    "babel-jest": "^25.4.0",
+    "babel-preset-gatsby": "^0.3.6",
+    "babel-preset-typescript": "^7.0.0-alpha.19",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^25.4.0",
+    "react-test-renderer": "^16.13.1"
   }
 }
