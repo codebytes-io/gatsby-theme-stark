@@ -20,6 +20,8 @@
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@storybook/addon-actions": "^5.3.18",
+    "@storybook/addon-contexts": "^5.3.18",
+    "@storybook/addon-knobs": "^5.3.18",
     "@storybook/addon-links": "^5.3.18",
     "@storybook/addons": "^5.3.18",
     "@storybook/react": "^5.3.18",
@@ -33,6 +35,7 @@
     "babel-preset-typescript": "^7.0.0-alpha.19",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^25.4.0",
-    "react-test-renderer": "^16.13.1"
+    "react-test-renderer": "^16.13.1",
+    "storybook-dark-mode": "^0.4.1"
   }
 }

@@ -1,14 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { configure, addDecorator } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
-import { ThemeProvider } from "theme-ui";
+import { ThemeProvider, useColorMode } from "theme-ui";
+import { useDarkMode } from "storybook-dark-mode";
 import theme from "../src/gatsby-plugin-theme-ui/index";
 
-console.log("theme", theme);
+const ColorModeWrapper = ({ children }) => {
+  const [colorMode, setColorMode] = useColorMode();
+  const darkMode = useDarkMode();
 
-addDecorator((storyFn) => (
-  <ThemeProvider theme={theme}>{storyFn()}</ThemeProvider>
-));
+  useEffect(() => {
+    setColorMode(darkMode ? "dark" : "default");
+  }, [darkMode]);
+
+  return <>{children}</>;
+};
+
+addDecorator((storyFn) => {
+  return (
+    <ThemeProvider theme={theme}>
+      <ColorModeWrapper>{storyFn()}</ColorModeWrapper>
+    </ThemeProvider>
+  );
+});
+
 // automatically import all files ending in *.stories.tsx
 configure(require.context("../src", true, /\.stories\.tsx$/), module);
 // Gatsby's Link overrides:

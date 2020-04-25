@@ -1,5 +1,12 @@
 export default {
   colors: {
-    background: "#333",
+    background: "#fff",
+    text: "#333",
+    modes: {
+      dark: {
+        background: "#333",
+        text: "#fff",
+      },
+    },
   },
 };
