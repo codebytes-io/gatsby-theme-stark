@@ -5,7 +5,9 @@
   "author": "christopherbiscardi <chris@christopherbiscardi.com> (@chrisbiscardi)",
   "license": "MIT",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "peerDependencies": {
     "gatsby": "^2.6.0"
@@ -15,11 +17,18 @@
     "gatsby-plugin-typescript": "^2.3.5"
   },
   "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@storybook/addon-actions": "^5.3.18",
+    "@storybook/addon-links": "^5.3.18",
+    "@storybook/addons": "^5.3.18",
+    "@storybook/react": "^5.3.18",
     "@testing-library/jest-dom": "^5.5.0",
     "@testing-library/react": "^10.0.3",
     "@types/jest": "^25.2.1",
     "babel-jest": "^25.4.0",
+    "babel-loader": "^8.1.0",
     "babel-preset-gatsby": "^0.3.6",
+    "babel-preset-react-app": "^9.1.2",
     "babel-preset-typescript": "^7.0.0-alpha.19",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^25.4.0",
