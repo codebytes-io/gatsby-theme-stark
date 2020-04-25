@@ -14,7 +14,8 @@
   },
   "dependencies": {
     "gatsby-plugin-theme-ui": "^0.3.0",
-    "gatsby-plugin-typescript": "^2.3.5"
+    "gatsby-plugin-typescript": "^2.3.5",
+    "theme-ui": "^0.3.1"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",

@@ -1,8 +1,14 @@
 import React from "react";
 import { configure, addDecorator } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
+import { ThemeProvider } from "theme-ui";
+import theme from "../src/gatsby-plugin-theme-ui/index";
 
-addDecorator((storyFn) => <>{storyFn()}</>);
+console.log("theme", theme);
+
+addDecorator((storyFn) => (
+  <ThemeProvider theme={theme}>{storyFn()}</ThemeProvider>
+));
 // automatically import all files ending in *.stories.tsx
 configure(require.context("../src", true, /\.stories\.tsx$/), module);
 // Gatsby's Link overrides:
