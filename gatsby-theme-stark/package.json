@@ -5,7 +5,7 @@
   "author": "christopherbiscardi <chris@christopherbiscardi.com> (@chrisbiscardi)",
   "license": "MIT",
   "scripts": {
-    "test": "jest",
+    "test": "jest --watch",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -13,6 +13,7 @@
     "gatsby": "^2.6.0"
   },
   "dependencies": {
+    "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-theme-ui": "^0.3.0",
     "gatsby-plugin-typescript": "^2.3.5",
     "theme-ui": "^0.3.1"

@@ -19,7 +19,9 @@ const ColorModeWrapper = ({ children }) => {
 addDecorator((storyFn) => {
   return (
     <ThemeProvider theme={theme}>
-      <ColorModeWrapper>{storyFn()}</ColorModeWrapper>
+      <ColorModeWrapper>
+        <div style={{ padding: 20 }}>{storyFn()}</div>
+      </ColorModeWrapper>
     </ThemeProvider>
   );
 });
