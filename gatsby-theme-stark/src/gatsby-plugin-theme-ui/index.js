@@ -5,17 +5,23 @@ export default {
   },
   colors: {
     background: "#fff",
-    text: "#333",
+    text: ["#000", "#333", "#666", "#999"],
+    primary: "#F56565",
     modes: {
       dark: {
         background: "#333",
-        text: "#fff",
+        text: ["#000", "#333", "#666", "#999"],
       },
     },
   },
   text: {
     display: {
       fontSize: 48,
+    },
+  },
+  styles: {
+    root: {
+      fontFamily: "body",
     },
   },
 };

@@ -1,6 +1,11 @@
+const path = require("path");
+
 module.exports = ({ config }) => {
   // Transpile Gatsby module because Gatsby includes un-transpiled ES6 code.
   config.module.rules[0].exclude = [/node_modules\/(?!(gatsby)\/)/];
+
+  // fixes issue with gatsby link https://github.com/gatsbyjs/gatsby/issues/10668
+  config.module.rules[0].include = path.resolve(__dirname, "../../..");
 
   // use installed babel-loader which is v8.0-beta (which is meant to work with @babel/core@7)
   config.module.rules[0].use[0].loader = require.resolve("babel-loader");
