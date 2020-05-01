@@ -20,7 +20,7 @@ const NavItem = ({ name, link, isActive }: NavItemProps) => {
       to={link}
       sx={{
         display: "inline-block",
-        color: "inherit",
+        color: "text.0",
         fontSize: 24,
         fontWeight: "bold",
         textDecoration: "none",

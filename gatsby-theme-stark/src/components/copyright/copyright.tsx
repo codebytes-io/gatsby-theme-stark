@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Text, Flex } from "theme-ui";
+import { jsx, Text } from "theme-ui";
 import { Fragment } from "react";
 
 interface Link {
@@ -9,7 +9,7 @@ interface Link {
 
 interface CopyrightProps {
   copyrightText?: string;
-  links: Link[];
+  links?: Link[];
 }
 
 const today = new Date();

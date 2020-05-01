@@ -20,7 +20,7 @@ addDecorator((storyFn) => {
   return (
     <ThemeProvider theme={theme}>
       <ColorModeWrapper>
-        <div style={{ padding: 20 }}>{storyFn()}</div>
+        <div style={{ padding: 20, height: "100vh" }}>{storyFn()}</div>
       </ColorModeWrapper>
     </ThemeProvider>
   );

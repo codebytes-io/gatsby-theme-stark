@@ -7,6 +7,7 @@ export default {
     background: "#fff",
     text: ["#000", "#333", "#666", "#999"],
     primary: "#F56565",
+    headings: "#000",
     modes: {
       dark: {
         background: "#333",
