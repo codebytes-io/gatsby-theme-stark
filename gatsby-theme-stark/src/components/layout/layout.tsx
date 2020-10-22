@@ -9,7 +9,7 @@ interface LayoutProps {
 const Layout = ({ children }: LayoutProps) => {
   return (
     <Flex sx={{ height: "100%" }}>
-      <aside sx={{ flexBasis: "340px" }}>
+      <aside sx={{ flexBasis: "340px", p: 40 }}>
         <Sidebar />
       </aside>
       <main sx={{ flex: 1 }}>{children}</main>
